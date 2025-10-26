@@ -1,6 +1,11 @@
-# My dotfiles
+# My dotfiles for my mac system.
 
-This directory contains the dotfiles for my system
+This directory contains the dotfiles for my mac system.
+There is dotfiles for:
+* ZSH
+* GHOSTTY
+* NEOVIM
+* EMACS (A minimal build for MAC)
 
 ## Requirements
 
@@ -9,13 +14,13 @@ Ensure you have the following installed on your system
 ### Git
 
 ```
-pacman -S git
+brew install git
 ```
 
 ### Stow
 
 ```
-pacman -S stow
+brew install stow
 ```
 
 ## Installation
@@ -23,8 +28,8 @@ pacman -S stow
 First, check out the dotfiles repo in your $HOME directory using git
 
 ```
-$ git clone git@github.com/styrman-g/dotfiles.git
-$ cd dotfiles
+$ git clone https://github.com/styrman-g/macdots.git
+$ cd macdots
 ```
 
 then use GNU stow to create symlinks
