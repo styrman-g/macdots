@@ -5,6 +5,8 @@ There is dotfiles for:
 * ZSH
 * GHOSTTY
 * NEOVIM
+* Yazi
+* Starship
 * EMACS (A minimal build for MAC)
 
 ## Requirements
