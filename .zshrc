@@ -33,12 +33,23 @@ zinit light Aloxaf/fzf-tab
 # Load completions
 autoload -U compinit && compinit
 
+# Homebrew
+export HOMEBREW_PREFIX="/opt/homebrew";
+export HOMEBREW_CELLAR="/opt/homebrew/Cellar";
+export HOMEBREW_REPOSITORY="/opt/homebrew";
+fpath[1,0]="/opt/homebrew/share/zsh/site-functions";
+eval "$(/usr/bin/env PATH_HELPER_ROOT="/opt/homebrew" /usr/libexec/path_helper -s)"
+[ -z "${MANPATH-}" ] || export MANPATH=":${MANPATH#:}";
+export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
+
+
 
 ### EXPORTS
 export EDITOR="emacs"
-export TERM="xterm-256color"                      # getting proper colors
+export TERM="xterm-256color"                      # getting propei colors
 export BROWSER="brave"
 export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/Applications:$PATH"
 
 # Enable colors:
 autoload -U colors && colors	# Load colors
